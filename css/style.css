@@ -18,6 +18,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: var(--main-font);
+  overflow-x: hidden;
 }
 
 * {
@@ -117,6 +118,7 @@ section {
 
 /* style untuk hero */
 .hero .hero-wrapper {
+  height: 712.88px;
   position: relative;
   margin: auto;
   display: flex;
@@ -142,6 +144,7 @@ section {
   font-size: 21px;
   line-height: 39px;
   margin-top: 23px;
+  letter-spacing: -0.66 px;
 }
 
 .hero-wrapper .content-right {
@@ -190,12 +193,101 @@ section {
 }
 
 .hero-wrapper .shape .shape-1 {
+  z-index: -10;
   position: absolute;
-  top: -500px;
-  left: -500px;
+  top: -100px;
+  left: -100px;
 }
 .hero-wrapper .shape .shape-2 {
+  z-index: -10;
   position: absolute;
-  top: 100px;
+  top: 300px;
   left: 300px;
+}
+
+.video-wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.video-heading {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.video-heading p {
+  width: 100%;
+  font-size: 21px;
+  letter-spacing: -0.66 px;
+}
+
+.video-heading h2 {
+  width: 100%;
+  font-family: var(--header-font);
+  color: #ffff;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 670px;
+  border: none;
+}
+
+.services .services-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.services .services-wrapper h2 {
+  font-family: var(--header-font);
+  text-align: center;
+  margin: auto;
+  font-size: 60px;
+  color: #ffff;
+  max-width: 695px;
+  margin-bottom: 30px;
+}
+
+.services-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.services-list-item {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+.services-list-item .item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 20px;
+  width: 299px;
+  height: 203px;
+}
+
+.item-wrapper img {
+  margin: auto;
+  width: 69px;
+}
+.item-wrapper h3 {
+  font-size: 28px;
+  color: #ffff;
+}
+.item-wrapper p {
+  font-size: 20px;
+  letter-spacing: -0.5px;
 }
