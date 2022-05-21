@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:wght@400;600;800&display=swap");
+
+:root {
+  --main-color: #5454d4;
+  --text-color: #bababb;
+  --bg-color: #19191b;
+
+  --main-font: "Nunito Sans", sans-serif;
+  --logo-font: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  /* color: var(--text-color); */
+  font-family: var(--main-font);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  /* background-color: white; warna bantu */
+}
+
+/* style untuk logo*/
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 132px;
+}
+
+.logo img {
+  margin-right: 8px;
+}
+
+.logo span {
+  font-size: 28px;
+  font-family: var(--logo-font);
+  color: #ffff;
+}
+
+/*style untuk button*/
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    min-width: 157px;
+    color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--main-color);
+    border: none;
+}
+
+/* style untuk navbar */
+.navbar .nav-wrapper {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  margin-top: 40px;
+}
+
+.menu-wrapper .menu {
+  display: flex;
+
+  gap: 40px;
+  align-items: center;
+}
+
+.menu a {
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.menu :hover {
+  color: var(--main-color);
+}
+.menu .active {
+  color: var(--main-color);
+  font-weight: 600;
+}
