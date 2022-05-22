@@ -353,6 +353,11 @@ section {
   border-radius: 14px;
 }
 
+.project-list-item .item-wrapper:hover {
+  filter: drop-shadow(0px 1px 3px #5454d4);
+  cursor: pointer;
+}
+
 .project-wrapper h2 {
   font-family: var(--header-font);
   margin: auto;
@@ -381,6 +386,7 @@ section {
 }
 
 .img-group-project {
+  z-index: -1;
   position: absolute;
   top: 0;
 }
@@ -419,4 +425,37 @@ section {
   position: absolute;
   top: 69px;
   right: 0;
+}
+
+/* bagian style untuk footer */
+footer {
+  min-height: 140px;
+}
+
+footer .footer-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: flex;
+  align-content: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.link-item a {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.link-item a:hover {
+  color: var(--main-color);
+}
+
+.footer-wrapper p {
+  margin-top: 10px;
 }
