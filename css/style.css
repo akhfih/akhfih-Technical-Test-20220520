@@ -118,7 +118,7 @@ section {
 
 /* style untuk hero */
 .hero .hero-wrapper {
-  height: 712.88px;
+  height: 600px;
   position: relative;
   margin: auto;
   display: flex;
@@ -239,7 +239,10 @@ section {
   border: none;
 }
 
+/*bagian style untuk serbices*/
+
 .services .services-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,15 +282,105 @@ section {
   height: 203px;
 }
 
-.item-wrapper img {
+.services-list-item .item-wrapper img {
   margin: auto;
   width: 69px;
 }
-.item-wrapper h3 {
+.services-list-item .item-wrapper h3 {
   font-size: 28px;
   color: #ffff;
 }
-.item-wrapper p {
+.services-list-item .item-wrapper p {
   font-size: 20px;
   letter-spacing: -0.5px;
+}
+
+.shape-3 {
+  z-index: -10;
+  position: absolute;
+  top: -500px;
+  left: -40%;
+}
+.shape-4 {
+  z-index: -10;
+  position: absolute;
+  left: -800px;
+}
+.shape-5 {
+  z-index: -10;
+  position: absolute;
+  right: -50%;
+  top: 500px;
+}
+
+.img-group-service {
+  z-index: -10;
+  position: absolute;
+  top: -50px;
+}
+
+/* style untuk section project */
+.project {
+  position: relative;
+}
+
+.project-wrapper {
+  margin: auto;
+  margin-top: -50px;
+}
+.project-wrapper .project-list {
+  margin-top: 70px;
+  display: flex;
+  gap: 24px;
+}
+
+.project-list-item {
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  justify-content: center;
+}
+.end {
+  justify-content: end;
+}
+
+.project-list-item .item-wrapper {
+  padding: 24px;
+  height: 301px;
+  background-color: #1e1e20;
+  border-radius: 14px;
+}
+
+.project-wrapper h2 {
+  font-family: var(--header-font);
+  margin: auto;
+  font-size: 60px;
+  color: #ffff;
+}
+
+.slide-indicator {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.slide-active {
+  width: 16px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--main-color);
+}
+.slide-none {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #121213;
+}
+
+.img-group-project {
+  position: absolute;
+  top: 0;
 }
