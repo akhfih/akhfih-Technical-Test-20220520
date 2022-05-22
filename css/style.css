@@ -384,3 +384,39 @@ section {
   position: absolute;
   top: 0;
 }
+
+/* style untuk section cta*/
+
+.cta {
+  background-color: #1e1e20;
+}
+.cta .cta-wrapper {
+  position: relative;
+  display: flex;
+  align-content: center;
+  margin: auto;
+  height: 506px;
+}
+
+.cta-wrapper h2 {
+  margin: auto 0;
+  font-family: var(--header-font);
+  font-size: 60px;
+  color: #ffff;
+  max-width: 826px;
+  max-height: 132px;
+}
+.cta-wrapper a {
+  z-index: 1;
+  flex: 1;
+  margin: auto;
+  margin-right: 0;
+  max-height: 60px;
+  max-width: 201px;
+}
+
+.img-group-cta {
+  position: absolute;
+  top: 69px;
+  right: 0;
+}
